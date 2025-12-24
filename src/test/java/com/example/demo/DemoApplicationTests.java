@@ -10,4 +10,8 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void testFailure() {
+		assert(1 == 2);
+	}
 }
