@@ -39,6 +39,10 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      # CẤP QUYỀN THỰC THI CHO JOB DEPLOY (Rất quan trọng)
+      - name: Grant execute permission for mvnw
+        run: chmod +x mvnw
+
       - name: Build Jar
         run: ./mvnw clean package -DskipTests=true
 
