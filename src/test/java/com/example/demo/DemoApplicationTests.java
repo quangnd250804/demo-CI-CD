@@ -9,9 +9,4 @@ class DemoApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
-	@Test
-	void testFailure() {
-		assert(1 == 2);
-	}
 }
