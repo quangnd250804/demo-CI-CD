@@ -16,6 +16,11 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+
+      # THÊM BƯỚC NÀY DƯỚI ĐÂY
+      - name: Grant execute permission for mvnw
+        run: chmod +x mvnw
+
       - name: Build with Maven
         run: ./mvnw clean package -DskipTests=false
 
