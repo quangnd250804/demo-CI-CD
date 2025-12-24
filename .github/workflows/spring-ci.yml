@@ -17,10 +17,10 @@ jobs:
         uses: actions/checkout@v4
 
       # 2. Cài đặt Java (Lưu ý chọn version khớp với dự án của bạn, ví dụ 17 hoặc 21)
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: maven # Tự động cache thư viện Maven để lần sau chạy nhanh hơn
 
